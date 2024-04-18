@@ -1,1 +1,1 @@
-{"config":{"lang":["en"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"]},"docs":[]}
+{"config":{"lang":["en"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"]},"docs":[{"location":"graph-schema/","title":"Graph Schema","text":""},{"location":"graph-schema/#in-the-global-view","title":"In the Global View","text":""},{"location":"graph-schema/#in-the-graph-database-view","title":"In the Graph Database View","text":""}]}
