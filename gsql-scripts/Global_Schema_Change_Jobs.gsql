@@ -1,0 +1,57 @@
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_373091522 {
+      ADD VERTEX Address TO GRAPH DanTest;
+      ADD VERTEX Customer TO GRAPH DanTest;
+      ADD VERTEX City TO GRAPH DanTest;
+      ADD VERTEX State TO GRAPH DanTest;
+      ADD VERTEX Zipcode TO GRAPH DanTest;
+      ADD VERTEX County TO GRAPH DanTest;
+      ADD VERTEX Country TO GRAPH DanTest;
+      ADD EDGE LOCATED_IN TO GRAPH DanTest;
+      ADD EDGE ASSIGNED_TO TO GRAPH DanTest;
+      ADD EDGE HAS_ADDRESS TO GRAPH DanTest;
+      ADD EDGE reverse_LOCATED_IN TO GRAPH DanTest;
+      ADD EDGE reverse_ASSIGNED_TO TO GRAPH DanTest;
+      ADD EDGE reverse_HAS_ADDRESS TO GRAPH DanTest;
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_1032136864 {
+      ALTER VERTEX City ADD ATTRIBUTE (name STRING, latitude FLOAT, longititude FLOAT, pop INT, density FLOAT, timezone STRING);
+      ALTER VERTEX State ADD ATTRIBUTE (name STRING);
+      ALTER VERTEX County ADD ATTRIBUTE (name STRING);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_2072057534 {
+      ALTER VERTEX Customer ADD ATTRIBUTE (firstName STRING, lastName STRING, email STRING, phone STRING);
+      ALTER VERTEX Zipcode ADD ATTRIBUTE (zipcode STRING);
+      ALTER VERTEX Country ADD ATTRIBUTE (name STRING, continent STRING);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_1035291649 {
+      ALTER VERTEX County ADD ATTRIBUTE (FIPS STRING);
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_129375556 {
+      DROP EDGE ASSIGNED_TO FROM GRAPH DanTest;
+      DROP EDGE reverse_ASSIGNED_TO FROM GRAPH DanTest;
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_1493662788 {
+      ADD EDGE ASSIGNED_TO TO GRAPH DanTest;
+      ADD EDGE reverse_ASSIGNED_TO TO GRAPH DanTest;
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_264996332 {
+      ADD VERTEX Region TO GRAPH DanTest;
+      ADD EDGE INCLUDES TO GRAPH DanTest;
+      ADD EDGE reverse_INCLUDES TO GRAPH DanTest;
+    }
+
+CREATE GLOBAL SCHEMA_CHANGE JOB global_schema_change_1056716741 {
+      ADD VERTEX Purchase TO GRAPH DanTest;
+      ADD VERTEX Product TO GRAPH DanTest;
+      ADD EDGE MADE_PURCHASE TO GRAPH DanTest;
+      ADD EDGE INCLUDE_PRODUCT TO GRAPH DanTest;
+      ADD EDGE reverse_MADE_PURCHASE TO GRAPH DanTest;
+      ADD EDGE reverse_INCLUDE_PRODUCT TO GRAPH DanTest;
+    }
+

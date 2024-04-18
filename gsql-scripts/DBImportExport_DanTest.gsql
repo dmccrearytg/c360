@@ -1,0 +1,105 @@
+CREATE GRAPH DanTest(Address, Customer, City, State, Zipcode, County, Country, Region, Purchase, Product, LOCATED_IN, HAS_ADDRESS, ASSIGNED_TO, INCLUDES, MADE_PURCHASE, INCLUDE_PRODUCT)
+set exit_on_error = "false"
+CREATE LOADING JOB file_load_job_5dda6f1e16 FOR GRAPH DanTest {
+      DEFINE FILENAME MyDataSource;
+      LOAD MyDataSource TO VERTEX State VALUES($0, $1) USING SEPARATOR=",", HEADER="true", EOL="\n";
+    }
+
+set exit_on_error = "true"
+set exit_on_error = "false"
+CREATE LOADING JOB file_load_job_e8aaeeb2d4 FOR GRAPH DanTest {
+      DEFINE FILENAME MyDataSource;
+      LOAD MyDataSource TO VERTEX County VALUES($0, $1, $0) USING SEPARATOR=",", HEADER="true", EOL="\n";
+    }
+
+set exit_on_error = "true"
+set exit_on_error = "false"
+CREATE LOADING JOB file_load_job_148a99bdb7 FOR GRAPH DanTest {
+      DEFINE FILENAME MyDataSource;
+      LOAD MyDataSource TO VERTEX Zipcode VALUES($0, $0) USING SEPARATOR=",", HEADER="true", EOL="\n";
+    }
+
+set exit_on_error = "true"
+set exit_on_error = "false"
+CREATE LOADING JOB file_load_job_6149ded109 FOR GRAPH DanTest {
+      DEFINE FILENAME MyDataSource;
+      LOAD MyDataSource TO EDGE LOCATED_IN VALUES($0 County, $1 State) USING SEPARATOR=",", HEADER="true", EOL="\n";
+    }
+
+set exit_on_error = "true"
+set exit_on_error = "false"
+CREATE LOADING JOB file_load_job_aca0a21f2d FOR GRAPH DanTest {
+      DEFINE FILENAME MyDataSource;
+      LOAD MyDataSource TO EDGE LOCATED_IN VALUES($0 City, $1 State) USING SEPARATOR=",", HEADER="true", EOL="\n";
+    }
+
+set exit_on_error = "true"
+set exit_on_error = "false"
+CREATE LOADING JOB file_load_job_fe33aefd4d FOR GRAPH DanTest {
+      DEFINE FILENAME MyDataSource;
+      LOAD MyDataSource TO VERTEX City VALUES($16, $1, $6, $7, $8, $9, $13) USING SEPARATOR=",", HEADER="true", EOL="\n";
+    }
+
+set exit_on_error = "true"
+set exit_on_error = "false"
+CREATE DISTRIBUTED QUERY countCounties() FOR GRAPH DanTest { 
+  Start = {County.*};
+  PRINT Start.size() as Number_Counties;
+}
+CREATE DISTRIBUTED QUERY countZipcodes() FOR GRAPH DanTest { 
+  Start = {Zipcode.*};
+  PRINT Start.size() as Number_Zipcodes;
+}
+CREATE DISTRIBUTED QUERY findCitiesWithName(STRING cityName) for Graph DanTest { 
+  Result = SELECT c
+    // Find all cities that have a LOCATED_IN edge to State
+    FROM City:c
+    WHERE c.name == cityName;
+  PRINT Result;
+}
+CREATE DISTRIBUTED QUERY selectCity() FOR GRAPH DanTest { 
+  Result = SELECT src
+    FROM City:src
+    WHERE src.name == "";
+  PRINT Result.size(), "selectCity works!"; 
+}
+CREATE DISTRIBUTED QUERY listSampleCities() FOR GRAPH DanTest { 
+  Result = SELECT src
+    FROM City:src
+    LIMIT 10;
+  PRINT Result.size(), "Number of Cities";
+  PRINT Result;
+}
+CREATE DISTRIBUTED QUERY countStates(/* Parameters here */) FOR GRAPH DanTest { 
+  Start = {State.*};
+  PRINT Start.size() as Number_States;
+}
+CREATE DISTRIBUTED QUERY deleteCitiesWithoutNames() for Graph DanTest { 
+  Result = SELECT c
+    // Find all cities that have a LOCATED_IN edge to State
+    FROM City:c -(LOCATED_IN:e)- State
+    WHERE c.name == ""
+    ACCUM
+      //delete edges
+      DELETE(e)
+    POST-ACCUM DELETE(c);
+  PRINT Result.size(), "cities without names have been deleted"; 
+}
+CREATE DISTRIBUTED QUERY selectState() FOR GRAPH DanTest { 
+  Result = SELECT src
+    FROM State:src
+    WHERE src.name == "Minnesota" OR src.name == "Iowa";
+  PRINT Result, "selectState works!"; 
+}
+CREATE DISTRIBUTED QUERY countCities() FOR GRAPH DanTest { 
+  Start = {City.*};
+  PRINT Start.size() AS total_cities;
+}
+CREATE DISTRIBUTED QUERY deleteAllCities() for Graph DanTest { 
+  Result = SELECT c
+    // Find all cities that have a LOCATED_IN edge to State
+    FROM City:c
+    POST-ACCUM DELETE(c);
+  PRINT Result.size(), "All-Cities-Deleted"; 
+}
+set exit_on_error = "true"
