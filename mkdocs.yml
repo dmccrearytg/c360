@@ -11,8 +11,7 @@ nav:
   - Home: index.md
   - About: about.md
   - Contact: contact.md
-  - Geospatial Concepts: geospatial-concepts.md
-  - Sample Transcript: sample-transcript.md
+  - Geospatial Concepts: concepts/index.md
 
 # edit_uri: 'blob/master/docs'
 theme:
