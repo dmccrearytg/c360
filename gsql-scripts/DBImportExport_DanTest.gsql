@@ -40,6 +40,12 @@ CREATE LOADING JOB file_load_job_fe33aefd4d FOR GRAPH DanTest {
       LOAD MyDataSource TO VERTEX City VALUES($16, $1, $6, $7, $8, $9, $13) USING SEPARATOR=",", HEADER="true", EOL="\n";
     }
 
+
+CREATE LOADING JOB load_cities_from_csv FOR GRAPH DanTest {
+      DEFINE FILENAME MyDataSource = "/home/tigergraph/tigergraph/data/gui/loading_data/dan.mccreary@tigergraph.com/uscities.csv";
+      LOAD MyDataSource TO VERTEX City VALUES($16, $1, $6, $7, $8, $9, $13) USING SEPARATOR=",", HEADER="true", EOL="\n", QUOTE="double";
+    }
+
 set exit_on_error = "true"
 set exit_on_error = "false"
 CREATE DISTRIBUTED QUERY countCounties() FOR GRAPH DanTest { 
