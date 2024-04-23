@@ -10,6 +10,11 @@ edit_uri: edit/master/docs/
 nav:
   - Home: index.md
   - About: about.md
+  - Graph Schema: graph-schema.md
+  - Concepts:
+    - Introduction: concepts/index.md
+    - Personas: concepts/personas.md
+    - Product Manager Questions: concepts/product-manager-questions.md
   - Contact: contact.md
   - Geospatial Concepts: concepts/index.md
 

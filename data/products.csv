@@ -1,0 +1,11 @@
+ProductID,ProductName,Supplier,Category,UnitPrice,UnitsInStock
+101,Spicy BBQ Sauce,Gourmet Foods,Condiments,4.99,100
+102,Organic Green Tea,Green Valley,Beverages,6.49,200
+103,Whole Grain Bread,Bakery Delights,Bakery Products,3.99,150
+104,Dark Chocolate Bar,Choco Bliss,Confectionery,2.99,250
+105,Almond Butter,Nutty World,Spreads,5.99,120
+106,Olive Oil,Olive Garden,Cooking Oils,7.99,300
+107,Red Wine,Vineyard Estates,Alcoholic Beverages,12.99,80
+108,Cheddar Cheese,Dairy Dreams,Dairy Products,4.49,130
+109,Roasted Coffee Beans,Coffee Roasters,Beverages,9.99,200
+110,Gourmet Popcorn,Popcorn Paradise,Snacks,3.49,180

@@ -1,50 +1,49 @@
 CREATE GRAPH DanTest(Address, Customer, City, State, Zipcode, County, Country, Region, Purchase, Product, LOCATED_IN, HAS_ADDRESS, ASSIGNED_TO, INCLUDES, MADE_PURCHASE, INCLUDE_PRODUCT)
 set exit_on_error = "false"
-CREATE LOADING JOB file_load_job_5dda6f1e16 FOR GRAPH DanTest {
-      DEFINE FILENAME MyDataSource;
-      LOAD MyDataSource TO VERTEX State VALUES($0, $1) USING SEPARATOR=",", HEADER="true", EOL="\n";
+
+set exit_on_error = "true"
+set exit_on_error = "false"
+CREATE LOADING JOB load_cities_from_csv FOR GRAPH DanTest {
+      DEFINE FILENAME uscities = "/home/tigergraph/tigergraph/data/gui/loading_data/dan.mccreary@tigergraph.com/uscities.csv";
+      LOAD uscities TO VERTEX City VALUES($16, $1, $6, $7, $8, $9, $13) USING SEPARATOR=",", HEADER="true", EOL="\n", QUOTE="double";
     }
 
 set exit_on_error = "true"
 set exit_on_error = "false"
-CREATE LOADING JOB file_load_job_e8aaeeb2d4 FOR GRAPH DanTest {
-      DEFINE FILENAME MyDataSource;
-      LOAD MyDataSource TO VERTEX County VALUES($0, $1, $0) USING SEPARATOR=",", HEADER="true", EOL="\n";
+CREATE LOADING JOB load_states_from_csv FOR GRAPH DanTest {
+      DEFINE FILENAME states = "/home/tigergraph/tigergraph/data/gui/loading_data/dan.mccreary@tigergraph.com/usstates.csv";
+      LOAD states TO VERTEX State VALUES($0, $1) USING SEPARATOR=",", HEADER="true", EOL="\n", QUOTE="double";
     }
 
 set exit_on_error = "true"
 set exit_on_error = "false"
-CREATE LOADING JOB file_load_job_148a99bdb7 FOR GRAPH DanTest {
-      DEFINE FILENAME MyDataSource;
-      LOAD MyDataSource TO VERTEX Zipcode VALUES($0, $0) USING SEPARATOR=",", HEADER="true", EOL="\n";
+CREATE LOADING JOB load_counties_from_csv FOR GRAPH DanTest {
+      DEFINE FILENAME counties = "/home/tigergraph/tigergraph/data/gui/loading_data/dan.mccreary@tigergraph.com/uscounties.csv";
+      LOAD counties TO VERTEX County VALUES($0, $1, $0) USING SEPARATOR=",", HEADER="true", EOL="\n", QUOTE="double";
+    }
+
+set exit_on_error = "true"
+set exit_on_error = "false"
+CREATE LOADING JOB load_zipcodes_from_csv FOR GRAPH DanTest {
+      DEFINE FILENAME zipcodes = "/home/tigergraph/tigergraph/data/gui/loading_data/dan.mccreary@tigergraph.com/uszipcodeses.csv";
+      LOAD zipcodes TO VERTEX Zipcode VALUES($0, $0) USING SEPARATOR=",", HEADER="true", EOL="\n", QUOTE="double";
     }
 
 set exit_on_error = "true"
 set exit_on_error = "false"
 CREATE LOADING JOB file_load_job_6149ded109 FOR GRAPH DanTest {
-      DEFINE FILENAME MyDataSource;
-      LOAD MyDataSource TO EDGE LOCATED_IN VALUES($0 County, $1 State) USING SEPARATOR=",", HEADER="true", EOL="\n";
+      DEFINE FILENAME MyDataSource = "/home/tigergraph/tigergraph/data/gui/loading_data/dan.mccreary@tigergraph.com/uscities.csv";
+      LOAD MyDataSource TO EDGE LOCATED_IN VALUES($0 County, $1 State) USING SEPARATOR=",", HEADER="true", EOL="\n", QUOTE="double";
     }
 
 set exit_on_error = "true"
 set exit_on_error = "false"
 CREATE LOADING JOB file_load_job_aca0a21f2d FOR GRAPH DanTest {
-      DEFINE FILENAME MyDataSource;
-      LOAD MyDataSource TO EDGE LOCATED_IN VALUES($0 City, $1 State) USING SEPARATOR=",", HEADER="true", EOL="\n";
-    }
-
-set exit_on_error = "true"
-set exit_on_error = "false"
-CREATE LOADING JOB file_load_job_fe33aefd4d FOR GRAPH DanTest {
-      DEFINE FILENAME MyDataSource;
-      LOAD MyDataSource TO VERTEX City VALUES($16, $1, $6, $7, $8, $9, $13) USING SEPARATOR=",", HEADER="true", EOL="\n";
-    }
-
-
-CREATE LOADING JOB load_cities_from_csv FOR GRAPH DanTest {
       DEFINE FILENAME MyDataSource = "/home/tigergraph/tigergraph/data/gui/loading_data/dan.mccreary@tigergraph.com/uscities.csv";
-      LOAD MyDataSource TO VERTEX City VALUES($16, $1, $6, $7, $8, $9, $13) USING SEPARATOR=",", HEADER="true", EOL="\n", QUOTE="double";
+      LOAD MyDataSource TO EDGE LOCATED_IN VALUES($0 City, $1 State) USING SEPARATOR=",", HEADER="true", EOL="\n", QUOTE="double";
     }
+
+
 
 set exit_on_error = "true"
 set exit_on_error = "false"

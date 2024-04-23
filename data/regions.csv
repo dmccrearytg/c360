@@ -1,0 +1,8 @@
+"ID", "Region Name", "States"
+"1", "Northeast", "CT ME MA NH RI VT NJ NY PA"
+"2", "Midwest", "IL IN MI OH KS MO NE ND"
+"3", "Upper Midwest", "MN ND SD IA WI"
+"4", "South Atlantic", "DE FL GA MD NC SC VA DC WV"
+"5", "South Central", "AL KY MS TN AR LA OK TX"
+"6", "Rocky Mountains", "AZ CO ID MT NM NV UT WY"
+"7", "Pacific Coast", "AK CA HI OR WA"
