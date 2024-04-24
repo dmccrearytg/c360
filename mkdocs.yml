@@ -16,7 +16,7 @@ nav:
     - Personas: concepts/personas.md
     - Product Manager Questions: concepts/product-manager-questions.md
   - Contact: contact.md
-  - Geospatial Concepts: concepts/index.md
+  - References: references.md
 
 # edit_uri: 'blob/master/docs'
 theme:
