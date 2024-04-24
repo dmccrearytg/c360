@@ -10,6 +10,7 @@ edit_uri: edit/master/docs/
 nav:
   - Home: index.md
   - About: about.md
+  - Getting Started: getting-started.md
   - Graph Schema: graph-schema.md
   - Concepts:
     - Introduction: concepts/index.md
