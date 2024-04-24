@@ -584,6 +584,22 @@
 
 
 <h1 id="question-categories">Question Categories</h1>
+<p>When we demonstrate CoPilot we want to show a variety of types of questions.
+We often start with simple questions and proceed to more complex questions.</p>
+<ol>
+<li><strong>Metrics</strong> - These are simple questions that usually return the count
+of the number of items in the database.  Example: <em>"How many customers do we have in the database?"</em></li>
+<li><strong>Metadata</strong> - These questions ask about the structure of the database or the meanings
+of different items.  Example: <em>"Show the data model for customers and products"</em></li>
+<li><strong>Rules</strong> - Describe business rules.  Example: <em>"What are the calculations for LTV?"</em></li>
+<li><strong>Instance Questions</strong> - Questions that ask for information about a single item in the database
+when a unique identifier is given.  Example: <em>"Show details for Store #4747"</em></li>
+<li><strong>Non-Traversal Questions</strong> - These are questions that can be answered by listing
+items of a homogeneous type with a simple qualifier.  <em>"How many products are there with a Category of Beverage?"</em></li>
+<li><strong>Path</strong> - These queries traverse multiple relationships.  Example: <em>"How many customers purchased more than three beverage products?"</em></li>
+<li><strong>Report</strong> - These queries run canned reports.  Example: <em>"Show me the sales for beverage products by  last year"</em></li>
+<li><strong>Complex</strong> - These questions execute more complex queries. Example: "Who are the most influential reviewers of products A, B and C"</li>
+</ol>
 <h2 id="questions-that-map-to-builtin-queries">Questions that Map to Builtin Queries</h2>
 <h2 id="questions-that-count-vertices-with-a-where">Questions that Count Vertices with a WHERE</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
