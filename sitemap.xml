@@ -2,42 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://dmccrearytg.github.io/360/</loc>
-         <lastmod>2024-04-23</lastmod>
+         <lastmod>2024-04-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dmccrearytg.github.io/360/about/</loc>
-         <lastmod>2024-04-23</lastmod>
+         <lastmod>2024-04-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dmccrearytg.github.io/360/contact/</loc>
-         <lastmod>2024-04-23</lastmod>
+         <lastmod>2024-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dmccrearytg.github.io/360/getting-started/</loc>
+         <lastmod>2024-04-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dmccrearytg.github.io/360/graph-schema/</loc>
-         <lastmod>2024-04-23</lastmod>
+         <lastmod>2024-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dmccrearytg.github.io/360/references/</loc>
+         <lastmod>2024-04-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dmccrearytg.github.io/360/concepts/</loc>
-         <lastmod>2024-04-23</lastmod>
+         <lastmod>2024-04-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dmccrearytg.github.io/360/concepts/model/</loc>
-         <lastmod>2024-04-23</lastmod>
+         <lastmod>2024-04-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dmccrearytg.github.io/360/concepts/personas/</loc>
-         <lastmod>2024-04-23</lastmod>
+         <lastmod>2024-04-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dmccrearytg.github.io/360/concepts/product-manager-questions/</loc>
-         <lastmod>2024-04-23</lastmod>
+         <lastmod>2024-04-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
