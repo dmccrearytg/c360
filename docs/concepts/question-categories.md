@@ -18,6 +18,7 @@ items of a homogeneous type with a simple qualifier.  *"How many products are th
 
 ## Questions that Map to Builtin Queries
 
+[List of TigerGraph builtin queries](https://docs.tigergraph.com/tigergraph-server/current/api/built-in-endpoints)
 
 
 ## Questions that Count Vertices with a WHERE
