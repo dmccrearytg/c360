@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "Business Glossary for Financial Fraud Analysis",
-    "description": "A schema for validating entries in a business glossary related to financial fraud analysis.",
+    "title": "Taxonomy Schema Concept File ",
+    "description": "A schema for validating entries in a taxonomy of concepts in a scheme.",
     "type": "array",
     "items": {
         "type": "object",
