@@ -8,6 +8,21 @@ Concepts can be as simple as a file of business terms.
 
 [Financial Fraud Concepts](https://github.com/dmccrearytg/c360/blob/main/data/concepts/financial-fraud-concepts.json)
 
+## Getting Started
+
+### Create a Conda Environment With Required Libraries
+
+We will need two libraries:
+
+1. jsonschema
+2. argparse
+3. rdflib
+
+```sh
+conda create -n "concepts" python=3
+conda activate python
+pip install jsonschema argparse rdflib
+
 ## Steps
 
 1. We will create a Python program that validates a simple flat Concepts file.
@@ -70,17 +85,7 @@ The following fields are optional
 
 [Link to Shema File](https://github.com/dmccrearytg/c360/blob/main/data/concepts/concept-schema.json)
 
-### Create a Conda Environment With Required Libraries
 
-We will need two libraries:
-
-1. jsonschema
-2. argparse
-
-```sh
-conda create -n "concepts" python=3
-conda activate python
-pip install jsonschema argparse
 ```
 
 ### Running the Validate Command from the Command Line Shell

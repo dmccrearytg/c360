@@ -16,6 +16,7 @@ nav:
     - Introduction: concepts/index.md
     - Personas: concepts/personas.md
     - Product Manager Questions: concepts/product-manager-questions.md
+    - Credit Card Application Fraud Personas: concepts/credit-card-personas.md
     - Question Categories: concepts/question-categories.md
     - Concept Validation: concepts/concept-validation.md
   - Contact: contact.md
