@@ -1,0 +1,102 @@
+[
+    {
+        "conceptID": "http://example.org/ns#000",
+        "prefLabel": "General works, Computer science and Information",
+        "altLabels": [],
+        "definition": "",
+        "notes": "",
+        "inScheme": [],
+        "topConceptOf": true,
+        "narrower": []
+    },
+    {
+        "conceptID": "http://example.org/ns#100",
+        "prefLabel": "Philosophy and psychology",
+        "altLabels": [],
+        "definition": "",
+        "notes": "",
+        "inScheme": [],
+        "topConceptOf": true,
+        "narrower": []
+    },
+    {
+        "conceptID": "http://example.org/ns#200",
+        "prefLabel": "Religion",
+        "altLabels": [],
+        "definition": "",
+        "notes": "",
+        "inScheme": [],
+        "topConceptOf": true,
+        "narrower": []
+    },
+    {
+        "conceptID": "http://example.org/ns#300",
+        "prefLabel": "Social sciences",
+        "altLabels": [],
+        "definition": "",
+        "notes": "",
+        "inScheme": [],
+        "topConceptOf": true,
+        "narrower": []
+    },
+    {
+        "conceptID": "http://example.org/ns#400",
+        "prefLabel": "Language",
+        "altLabels": [],
+        "definition": "",
+        "notes": "",
+        "inScheme": [],
+        "topConceptOf": true,
+        "narrower": []
+    },
+    {
+        "conceptID": "http://example.org/ns#500",
+        "prefLabel": "Science",
+        "altLabels": [],
+        "definition": "",
+        "notes": "",
+        "inScheme": [],
+        "topConceptOf": true,
+        "narrower": []
+    },
+    {
+        "conceptID": "http://example.org/ns#600",
+        "prefLabel": "Technology",
+        "altLabels": [],
+        "definition": "",
+        "notes": "",
+        "inScheme": [],
+        "topConceptOf": true,
+        "narrower": []
+    },
+    {
+        "conceptID": "http://example.org/ns#700",
+        "prefLabel": "Arts and recreation",
+        "altLabels": [],
+        "definition": "",
+        "notes": "",
+        "inScheme": [],
+        "topConceptOf": true,
+        "narrower": []
+    },
+    {
+        "conceptID": "http://example.org/ns#800",
+        "prefLabel": "Literature",
+        "altLabels": [],
+        "definition": "",
+        "notes": "",
+        "inScheme": [],
+        "topConceptOf": true,
+        "narrower": []
+    },
+    {
+        "conceptID": "http://example.org/ns#900",
+        "prefLabel": "History and geography",
+        "altLabels": [],
+        "definition": "",
+        "notes": "",
+        "inScheme": [],
+        "topConceptOf": true,
+        "narrower": []
+    }
+]

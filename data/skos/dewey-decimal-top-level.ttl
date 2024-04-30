@@ -1,0 +1,42 @@
+@prefix ns1: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://example.org/ns#000> ns1:inScheme <http://example.org/ns#DeweyDecimalClassification> ;
+    ns1:prefLabel "General works, Computer science and Information" ;
+    ns1:topConceptOf <http://example.org/ns#DeweyDecimalClassification> .
+
+<http://example.org/ns#100> ns1:inScheme <http://example.org/ns#DeweyDecimalClassification> ;
+    ns1:prefLabel "Philosophy and psychology" ;
+    ns1:topConceptOf <http://example.org/ns#DeweyDecimalClassification> .
+
+<http://example.org/ns#200> ns1:inScheme <http://example.org/ns#DeweyDecimalClassification> ;
+    ns1:prefLabel "Religion" ;
+    ns1:topConceptOf <http://example.org/ns#DeweyDecimalClassification> .
+
+<http://example.org/ns#300> ns1:inScheme <http://example.org/ns#DeweyDecimalClassification> ;
+    ns1:prefLabel "Social sciences" ;
+    ns1:topConceptOf <http://example.org/ns#DeweyDecimalClassification> .
+
+<http://example.org/ns#400> ns1:inScheme <http://example.org/ns#DeweyDecimalClassification> ;
+    ns1:prefLabel "Language" ;
+    ns1:topConceptOf <http://example.org/ns#DeweyDecimalClassification> .
+
+<http://example.org/ns#500> ns1:inScheme <http://example.org/ns#DeweyDecimalClassification> ;
+    ns1:prefLabel "Science" ;
+    ns1:topConceptOf <http://example.org/ns#DeweyDecimalClassification> .
+
+<http://example.org/ns#600> ns1:inScheme <http://example.org/ns#DeweyDecimalClassification> ;
+    ns1:prefLabel "Technology" ;
+    ns1:topConceptOf <http://example.org/ns#DeweyDecimalClassification> .
+
+<http://example.org/ns#700> ns1:inScheme <http://example.org/ns#DeweyDecimalClassification> ;
+    ns1:prefLabel "Arts and recreation" ;
+    ns1:topConceptOf <http://example.org/ns#DeweyDecimalClassification> .
+
+<http://example.org/ns#800> ns1:inScheme <http://example.org/ns#DeweyDecimalClassification> ;
+    ns1:prefLabel "Literature" ;
+    ns1:topConceptOf <http://example.org/ns#DeweyDecimalClassification> .
+
+<http://example.org/ns#900> ns1:inScheme <http://example.org/ns#DeweyDecimalClassification> ;
+    ns1:prefLabel "History and geography" ;
+    ns1:topConceptOf <http://example.org/ns#DeweyDecimalClassification> .
+

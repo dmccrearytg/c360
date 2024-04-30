@@ -1,0 +1,145 @@
+[
+    {
+        "conceptID": "http://example.org/ns#000",
+        "prefLabel": "General works, Computer science and Information",
+        "altLabels": [
+            "Books",
+            "Generalities",
+            "Internet",
+            "Libraries"
+        ],
+        "definition": "Books and other compilations that do not fit other categories, including computer science and information.",
+        "notes": "",
+        "inScheme": [],
+        "topConceptOf": true,
+        "narrower": []
+    },
+    {
+        "conceptID": "http://example.org/ns#100",
+        "prefLabel": "Philosophy and psychology",
+        "altLabels": [
+            "Aesthetics",
+            "Ethics",
+            "Metaphysics"
+        ],
+        "definition": "Disciplines and studies that involve the nature of reality and existence, ethical and moral reasoning, and the mind.",
+        "notes": "",
+        "inScheme": [],
+        "topConceptOf": true,
+        "narrower": []
+    },
+    {
+        "conceptID": "http://example.org/ns#200",
+        "prefLabel": "Religion",
+        "altLabels": [
+            "Theology"
+        ],
+        "definition": "Systematic and detailed discussions and theologies of various religions.",
+        "notes": "",
+        "inScheme": [],
+        "topConceptOf": true,
+        "narrower": []
+    },
+    {
+        "conceptID": "http://example.org/ns#300",
+        "prefLabel": "Social sciences",
+        "altLabels": [
+            "Anthropology",
+            "Economics",
+            "Law",
+            "Public administration",
+            "Sociology"
+        ],
+        "definition": "Studies concerned with society and the relationships among individuals within a society.",
+        "notes": "",
+        "inScheme": [],
+        "topConceptOf": true,
+        "narrower": []
+    },
+    {
+        "conceptID": "http://example.org/ns#400",
+        "prefLabel": "Language",
+        "altLabels": [
+            "Dictionaries",
+            "Linguistics"
+        ],
+        "definition": "Concerns the structure and use of language.",
+        "notes": "",
+        "inScheme": [],
+        "topConceptOf": true,
+        "narrower": []
+    },
+    {
+        "conceptID": "http://example.org/ns#500",
+        "prefLabel": "Science",
+        "altLabels": [
+            "Biology",
+            "Chemistry",
+            "Mathematics",
+            "Physics"
+        ],
+        "definition": "Disciplines that involve the scientific study of the natural world and its phenomena.",
+        "notes": "",
+        "inScheme": [],
+        "topConceptOf": true,
+        "narrower": []
+    },
+    {
+        "conceptID": "http://example.org/ns#600",
+        "prefLabel": "Technology",
+        "altLabels": [
+            "Agriculture",
+            "Engineering",
+            "Home economics",
+            "Management"
+        ],
+        "definition": "Applied sciences and technologies, including health sciences, agriculture, and management.",
+        "notes": "",
+        "inScheme": [],
+        "topConceptOf": true,
+        "narrower": []
+    },
+    {
+        "conceptID": "http://example.org/ns#700",
+        "prefLabel": "Arts and recreation",
+        "altLabels": [
+            "Fine Arts",
+            "Music",
+            "Sports"
+        ],
+        "definition": "Cultural and creative expressions through fine arts, entertainment, and sports.",
+        "notes": "",
+        "inScheme": [],
+        "topConceptOf": true,
+        "narrower": []
+    },
+    {
+        "conceptID": "http://example.org/ns#800",
+        "prefLabel": "Literature",
+        "altLabels": [
+            "Drama",
+            "Essays",
+            "Fiction",
+            "Poetry"
+        ],
+        "definition": "Works of creative writing, including poetry, drama, fiction, and essays.",
+        "notes": "",
+        "inScheme": [],
+        "topConceptOf": true,
+        "narrower": []
+    },
+    {
+        "conceptID": "http://example.org/ns#900",
+        "prefLabel": "History and geography",
+        "altLabels": [
+            "Biographies",
+            "Geographic guides",
+            "Historical books"
+        ],
+        "definition": "Detailed accounts of historical events and comprehensive guides to geography and biographies.",
+        "notes": "",
+        "inScheme": [],
+        "topConceptOf": true,
+        "narrower": []
+    }
+]

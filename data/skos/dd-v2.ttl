@@ -1,0 +1,85 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://example.org/ns#000> skos:altLabel "Books",
+        "Generalities",
+        "Internet",
+        "Libraries" ;
+    skos:definition "Books and other compilations that do not fit other categories, including computer science and information." ;
+    skos:inScheme <http://example.org/ns#DeweyDecimalClassification> ;
+    skos:prefLabel "General works, Computer science and Information" ;
+    skos:topConceptOf <http://example.org/ns#DeweyDecimalClassification> .
+
+<http://example.org/ns#100> skos:altLabel "Aesthetics",
+        "Ethics",
+        "Metaphysics" ;
+    skos:definition "Disciplines and studies that involve the nature of reality and existence, ethical and moral reasoning, and the mind." ;
+    skos:inScheme <http://example.org/ns#DeweyDecimalClassification> ;
+    skos:prefLabel "Philosophy and psychology" ;
+    skos:topConceptOf <http://example.org/ns#DeweyDecimalClassification> .
+
+<http://example.org/ns#200> skos:altLabel "Theology" ;
+    skos:definition "Systematic and detailed discussions and theologies of various religions." ;
+    skos:inScheme <http://example.org/ns#DeweyDecimalClassification> ;
+    skos:prefLabel "Religion" ;
+    skos:topConceptOf <http://example.org/ns#DeweyDecimalClassification> .
+
+<http://example.org/ns#300> skos:altLabel "Anthropology",
+        "Economics",
+        "Law",
+        "Public administration",
+        "Sociology" ;
+    skos:definition "Studies concerned with society and the relationships among individuals within a society." ;
+    skos:inScheme <http://example.org/ns#DeweyDecimalClassification> ;
+    skos:prefLabel "Social sciences" ;
+    skos:topConceptOf <http://example.org/ns#DeweyDecimalClassification> .
+
+<http://example.org/ns#400> skos:altLabel "Dictionaries",
+        "Linguistics" ;
+    skos:definition "Concerns the structure and use of language." ;
+    skos:inScheme <http://example.org/ns#DeweyDecimalClassification> ;
+    skos:prefLabel "Language" ;
+    skos:topConceptOf <http://example.org/ns#DeweyDecimalClassification> .
+
+<http://example.org/ns#500> skos:altLabel "Biology",
+        "Chemistry",
+        "Mathematics",
+        "Physics" ;
+    skos:definition "Disciplines that involve the scientific study of the natural world and its phenomena." ;
+    skos:inScheme <http://example.org/ns#DeweyDecimalClassification> ;
+    skos:prefLabel "Science" ;
+    skos:topConceptOf <http://example.org/ns#DeweyDecimalClassification> .
+
+<http://example.org/ns#600> skos:altLabel "Agriculture",
+        "Engineering",
+        "Home economics",
+        "Management" ;
+    skos:definition "Applied sciences and technologies, including health sciences, agriculture, and management." ;
+    skos:inScheme <http://example.org/ns#DeweyDecimalClassification> ;
+    skos:prefLabel "Technology" ;
+    skos:topConceptOf <http://example.org/ns#DeweyDecimalClassification> .
+
+<http://example.org/ns#700> skos:altLabel "Fine Arts",
+        "Music",
+        "Sports" ;
+    skos:definition "Cultural and creative expressions through fine arts, entertainment, and sports." ;
+    skos:inScheme <http://example.org/ns#DeweyDecimalClassification> ;
+    skos:prefLabel "Arts and recreation" ;
+    skos:topConceptOf <http://example.org/ns#DeweyDecimalClassification> .
+
+<http://example.org/ns#800> skos:altLabel "Drama",
+        "Essays",
+        "Fiction",
+        "Poetry" ;
+    skos:definition "Works of creative writing, including poetry, drama, fiction, and essays." ;
+    skos:inScheme <http://example.org/ns#DeweyDecimalClassification> ;
+    skos:prefLabel "Literature" ;
+    skos:topConceptOf <http://example.org/ns#DeweyDecimalClassification> .
+
+<http://example.org/ns#900> skos:altLabel "Biographies",
+        "Geographic guides",
+        "Historical books" ;
+    skos:definition "Detailed accounts of historical events and comprehensive guides to geography and biographies." ;
+    skos:inScheme <http://example.org/ns#DeweyDecimalClassification> ;
+    skos:prefLabel "History and geography" ;
+    skos:topConceptOf <http://example.org/ns#DeweyDecimalClassification> .
+
