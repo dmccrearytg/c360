@@ -1,5 +1,13 @@
 # Concept Validation
 
+CoPilot's SupportAI also supports the loading of SKOS-style concepts into the graph.
+These concepts can be used to compose queries that use Boolean operations such as AND/OR/NOT
+on collections.
+
+Concepts can be as simple as a file of business terms.
+
+[Financial Fraud Concepts](https://github.com/dmccrearytg/c360/blob/main/data/concepts/financial-fraud-concepts.json)
+
 ## Steps
 
 1. We will create a Python program that validates a simple flat Concepts file.
@@ -8,7 +16,7 @@
 
 ## JSON Schema File
 
-This schema file definds the fields and creates a defintion for each field.
+This schema file defines the fields and creates a definition for each field.
 
 The following fields are REQUIRED fields.
 
@@ -58,8 +66,9 @@ The following fields are optional
         "additionalProperties": false
     }
 }
-
 ```
+
+[Link to Shema File](https://github.com/dmccrearytg/c360/blob/main/data/concepts/concept-schema.json)
 
 ### Create a Conda Environment With Required Libraries
 
