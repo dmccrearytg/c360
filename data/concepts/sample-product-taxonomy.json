@@ -1,0 +1,102 @@
+[
+    {
+        "conceptID": "C001",
+        "prefLabel": "Beverage",
+        "altLabels": ["Drinks"],
+        "definition": "A liquid intended for human consumption.",
+        "notes": "Includes a wide range of drinkable products, both alcoholic and non-alcoholic.",
+        "inScheme": "acme-foods",
+        "topConceptOf": true,
+        "narrower": ["C002", "C005", "C007", "C008", "C009"]
+    },
+    {
+        "conceptID": "C002",
+        "prefLabel": "Tea",
+        "altLabels": ["Brewed Beverage"],
+        "definition": "A hot drink made by infusing the dried, crushed leaves of the tea plant in boiling water.",
+        "notes": "Commonly served hot but can also be enjoyed cold.",
+        "inScheme": "acme-foods",
+        "topConceptOf": false,
+        "narrower": ["C003", "C006"]
+    },
+    {
+        "conceptID": "C003",
+        "prefLabel": "Green Tea",
+        "altLabels": ["Unoxidized Tea"],
+        "definition": "A type of tea that is made from Camellia sinensis leaves and buds that have not undergone the same withering and oxidation process used to make oolong teas and black teas.",
+        "notes": "Green tea is known for its health benefits.",
+        "inScheme": "acme-foods",
+        "topConceptOf": false,
+        "narrower": []
+    },
+    {
+        "conceptID": "C004",
+        "prefLabel": "Snacks",
+        "altLabels": ["Salty Snacks"],
+        "definition": "A type of small, informal food product, often salty or sweet, meant for snacking.",
+        "notes": "Examples includes chips, nuts, crackers and cookies.",
+        "inScheme": "acme-foods",
+        "topConceptOf": false,
+        "narrower": ["C010"]
+    },
+    {
+        "conceptID": "C005",
+        "prefLabel": "Coffee",
+        "altLabels": ["Brewed Drink"],
+        "definition": "A brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species.",
+        "notes": "Widely consumed around the world, commonly served hot.",
+        "inScheme": "acme-foods",
+        "topConceptOf": false,
+        "narrower": []
+    },
+    {
+        "conceptID": "C006",
+        "prefLabel": "Herbal Tea",
+        "altLabels": ["Tisane"],
+        "definition": "A drink made from the infusion or decoction of herbs, spices, or other plant material in hot water.",
+        "notes": "Does not contain caffeine.",
+        "inScheme": "acme-foods",
+        "topConceptOf": false,
+        "narrower": []
+    },
+    {
+        "conceptID": "C007",
+        "prefLabel": "Beer",
+        "altLabels": ["Brewed Alcoholic Beverage"],
+        "definition": "An alcoholic drink made from yeast-fermented malt flavored with hops.",
+        "notes": "One of the oldest and most widely consumed alcoholic drinks in the world.",
+        "inScheme": "acme-foods",
+        "topConceptOf": false,
+        "narrower": []
+    },
+    {
+        "conceptID": "C008",
+        "prefLabel": "Wine",
+        "altLabels": ["Fermented Grape Juice"],
+        "definition": "An alcoholic drink made by fermenting grapes with various yeast strains.",
+        "notes": "Types vary greatly depending on the fermentation process and the grapes used.",
+        "inScheme": "acme-foods",
+        "topConceptOf": false,
+        "narrower": []
+    },
+    {
+        "conceptID": "C009",
+        "prefLabel": "Juices",
+        "altLabels": ["Fruit Juices"],
+        "definition": "A liquid that is naturally contained in fruit and vegetables; often consumed as a beverage.",
+        "notes": "Available as fresh juice or processed juice.",
+        "inScheme": "acme-foods",
+        "topConceptOf": false,
+        "narrower": []
+    },
+    {
+        "conceptID": "C010",
+        "prefLabel": "Confections",
+        "altLabels": ["Sweets", "Candy"],
+        "definition": "A broad category of food items that are rich in sugar and carbohydrates. Generally considered to be a treat or dessert.",
+        "notes": "Includes items such as chocolates, candies, and other sweet baked goods.",
+        "inScheme": "acme-foods",
+        "topConceptOf": false,
+        "narrower": []
+    }
+]
