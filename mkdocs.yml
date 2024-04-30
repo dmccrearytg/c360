@@ -3,8 +3,8 @@ site_url: https://github.com/dmccrearytg/c360
 site_description: 'Resources for teaching classes TigerGraph CoPilot using Customer 360 model.'
 site_author: 'Dan McCreary'
 repo_name: 'GitHub Repo'
-site_url: 'https://dmccrearytg.github.io/360'
-repo_url: 'https://github.com/dmccrearytg/360'
+site_url: 'https://dmccrearytg.github.io/c360'
+repo_url: 'https://github.com/dmccrearytg/c360'
 edit_uri: edit/master/docs/
 
 nav:
