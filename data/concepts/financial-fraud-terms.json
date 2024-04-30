@@ -1,0 +1,72 @@
+[
+    {
+        "conceptID": "001",
+        "prefLabel": "Fraud Detection",
+        "altLabels": ["Anomaly Detection", "Fraud Discovery"],
+        "definition": "The process of identifying fraudulent activities, especially in financial transactions.",
+        "notes": "Uses various analytics and data mining techniques."
+    },
+    {
+        "conceptID": "002",
+        "prefLabel": "Phishing",
+        "altLabels": ["Email Fraud", "Spoofing"],
+        "definition": "A type of social engineering attack often used to steal user data, including login credentials and credit card numbers.",
+        "notes": "Commonly involves fake emails or websites."
+    },
+    {
+        "conceptID": "003",
+        "prefLabel": "Anti-Money Laundering",
+        "altLabels": ["AML"],
+        "definition": "A set of laws, regulations, and procedures intended to prevent criminals from disguising illegally obtained funds as legitimate income.",
+        "notes": "Includes KYC processes."
+    },
+    {
+        "conceptID": "004",
+        "prefLabel": "Risk Assessment",
+        "altLabels": ["Risk Analysis"],
+        "definition": "The process of identifying and analyzing potential issues that could negatively impact key business initiatives or projects.",
+        "notes": "Fundamental in fraud prevention strategies."
+    },
+    {
+        "ConceptID": "005",
+        "prefLabel": "Forensic Accounting",
+        "altLabels": ["Financial Forensics"],
+        "Definition": "The specialty practice area of accounting that describes engagements that result from actual or anticipated disputes or litigation.",
+        "Notes": "Often involves financial fraud investigation."
+    },
+    {
+        "ConceptID": "006",
+        "prefLabel": "KYC (Know Your Customer)",
+        "altLabels": ["Client Onboarding"],
+        "Definition": "The process of a business verifying the identity of its clients and assessing their suitability, along with the potential risks of illegal intentions towards the business relationship.",
+        "Notes": "Part of AML regulations."
+    },
+    {
+        "ConceptID": "007",
+        "prefLabel": "Identity Theft",
+        "altLabels": ["ID Theft", "Identity Fraud"],
+        "Definition": "The deliberate use of someone else's identity, usually as a method to gain a financial advantage or obtain credit and other benefits in the other person's name.",
+        "Notes": "Can lead to significant financial losses."
+    },
+    {
+        "ConceptID": "008",
+        "prefLabel": "Compliance",
+        "altLabels": ["Regulatory Compliance"],
+        "Definition": "The act of being in accordance with established guidelines or specifications, or the process of becoming so, especially in the financial sector.",
+        "Notes": "Related to both internal policies and external legal regulations."
+    },
+    {
+        "ConceptID": "009",
+        "prefLabel": "Transaction Monitoring",
+        "altLabels": ["Transaction Review"],
+        "Definition": "The monitoring of customer transactions, including assessing historical/current customer information and interactions to provide a complete picture of customer activity.",
+        "Notes": "This can include transferring funds, withdrawing money, and more."
+    },
+    {
+        "ConceptID": "010",
+        "prefLabel": "SAR (Suspicious Activity Report)",
+        "altLabels": ["Suspicious Transaction Reporting"],
+        "Definition": "A document that financial institutions must file with the Financial Crimes Enforcement Network (FinCEN) when there is a suspected case of money laundering or fraud.",
+        "Notes": "A crucial part of AML compliance."
+    }
+]

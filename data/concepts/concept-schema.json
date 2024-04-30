@@ -1,0 +1,36 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Business Glossary for Financial Fraud Analysis",
+    "description": "A schema for validating entries in a business glossary related to financial fraud analysis.",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "conceptID": {
+                "type": "string",
+                "description": "A unique identifier for the concept."
+            },
+            "prefLabel": {
+                "type": "string",
+                "description": "The preferred label of the concept."
+            },
+            "altLabels": {
+                "type": "array",
+                "description": "A list of alternative labels for the concept.",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "definition": {
+                "type": "string",
+                "description": "A clear and concise definition of the concept."
+            },
+            "notes": {
+                "type": "string",
+                "description": "Additional notes regarding the concept."
+            }
+        },
+        "required": ["conceptID", "prefLabel", "definition"],
+        "additionalProperties": false
+    }
+}
